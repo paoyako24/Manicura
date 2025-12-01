@@ -1,0 +1,15 @@
+<header>
+  <h1>💅 Manicura Profesional</h1>
+
+  <nav>
+    <button (click)="mostrar('inicio')">Inicio</button>
+    <button (click)="mostrar('servicios')">Servicios</button>
+    <button (click)="mostrar('contacto')">Contacto</button>
+  </nav>
+</header>
+
+<main>
+<app-inicio *ngIf="seccion ==='inicio'"></app-inicio>
+<app-servicios *ngIf="seccion ==='servicios'"></app-servicios>
+<app-contacto *ngIf="seccion === 'contacto'"></app-contacto>
+</main>
